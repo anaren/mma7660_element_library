@@ -1,0 +1,110 @@
+{
+	"type": "Embedded Library",
+	"label": "MMA7660 Driver",
+	"language": {
+		"en": {
+			"label": "MMA7660 Driver"
+		}
+	},
+	"name": "mma7660",
+	"author": "Anaren Inc.",
+	"manufacturer":"NXP",
+	"description":"The MMA7660FC is a digital output, very low-power, capacitive accelerometer featuring a low pass filter, compensation for zero-g offset and gain errors and conversion to six-bit digital values at a configurable output data rate.",
+	"signature": "",
+	"version": "1.0.0",
+	
+	"links":{
+		"Datasheet":"http://www.nxp.com/files/sensors/doc/data_sheet/MMA7660FC.pdf",
+		"Wiki Page":"https://"
+	},
+	
+	"code": {
+		"global" : "",
+		"setup" : "" 
+	},
+	
+	"elements": {
+		"getSide": {
+			"label": "Get device side",
+			"language": {
+				"en": {
+					"label": "Get device side"
+				}
+			},
+			"returnType":"json",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		},
+		"getOrientation": {
+			"label": "Get device orientation",
+			"language": {
+				"en": {
+					"label": "Get device orientation"
+				}
+			},
+			"returnType":"json",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		},
+		"xRawAcceleration": {
+			"label": "X Raw Acceleration",
+			"language": {
+				"en": {
+					"label": "X Raw Acceleration"
+				}
+			},
+			"returnType":"int",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		},
+		"yRawAcceleration": {
+			"label": "Y Raw Acceleration",
+			"language": {
+				"en": {
+					"label": "Y Raw Acceleration"
+				}
+			},
+			"returnType":"int",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		},
+		"zRawAcceleration": {
+			"label": "Z Raw Acceleration",
+			"language": {
+				"en": {
+					"label": "Z Raw Acceleration"
+				}
+			},
+			"returnType":"int",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		}
+	},
+	
+	"config":{
+		"file":"mma7660_config.h",
+		
+		"values":{
+			"samp_rate":{
+				"name":"Sampling Rate",
+				"input":"Combo",
+				"prefix":"#define AIR_MMA7660_SMPL MMA7660_SMPL_",
+				"options": ["120", "64", "32", "16", "8", "4", "2", "1"],
+				"value":"64",
+				"regex":"^[a-zA-Z0-9_.]*$"
+			}
+		}
+	},
+	
+	"categories":["Sensor", "Acceleration", "New"],
+	"links":{
+		"Product Page":"http://www.nxp.com/products/sensors/accelerometers/3-axis-accelerometers/1.5g-low-g-digital-accelerometer:MMA7660FC?",
+		"Datasheet":"http://www.nxp.com/files/sensors/doc/data_sheet/MMA7660FC.pdf",
+		"Wiki Page":"https://"
+	}
+}

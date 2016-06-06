@@ -1,0 +1,1 @@
+	return MMA7660_GetXAxisRaw();
