@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "mma7660_config.h"
 
 /**
  * MMA7660 I2C Address
@@ -148,7 +149,7 @@ void MMA7660_WriteByte(unsigned char address, unsigned char data);
  * @param address i2c address to read from
  * @return data byte read
  */
-unsigned char MMA7760_ReadReg(unsigned char address);
+unsigned char MMA7660_ReadReg(unsigned char address);
 /**
  * Read data byte(s) from given address over I2C
  * @param address i2c address to read from
