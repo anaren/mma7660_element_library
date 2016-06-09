@@ -184,14 +184,14 @@ MMA7660_Orientation_t MMA7660_GetOrientation( void )
     tiltreg &= 0x07<<2;
     tiltreg >>= 2;
     if (tiltreg == 0x01)
-        return Left;
+        return MMA7660_Left;
     if (tiltreg == 0x02)
-        return Right;
+        return MMA7660_Right;
     if (tiltreg == 0x05)
-        return Down;
+        return MMA7660_Down;
     if (tiltreg == 0x06)
-        return Up;
-    return Unknown;
+        return MMA7660_Up;
+    return MMA7660_Unknown;
 }
 
 

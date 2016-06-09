@@ -30,13 +30,13 @@
  * the device is facing
  */
 typedef enum MMA7660_Orientation {
-	Up		= 0x00,
-	Down 	= 0x01,
-	Right	= 0x02,
-	Left 	= 0x03,
-	Back 	= 0x04,
-	Front 	= 0x05,
-	Unknown = 0x06
+	MMA7660_Up		= 0x00,
+	MMA7660_Down 	= 0x01,
+	MMA7660_Right	= 0x02,
+	MMA7660_Left 	= 0x03,
+	MMA7660_Back 	= 0x04,
+	MMA7660_Front 	= 0x05,
+	MMA7660_Unknown = 0x06
 } MMA7660_Orientation_t;
 
 /**
