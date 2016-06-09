@@ -118,7 +118,7 @@
     "links": {
         "Datasheet": "http://www.nxp.com/files/sensors/doc/data_sheet/MMA7660FC.pdf",
         "Product Page": "http://www.nxp.com/products/sensors/accelerometers/3-axis-accelerometers/1.5g-low-g-digital-accelerometer:MMA7660FC?",
-        "Wiki Page": "https://"
+        "Wiki Page": "https://atmosphere.anaren.com/wiki/MMA7660_Driver"
     },
     "manufacturer": "NXP",
     "name": "mma7660",
