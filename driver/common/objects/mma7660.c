@@ -26,7 +26,7 @@ uint8_t MMA7660_GetSingleAxisRaw( uint8_t number )
 	bool active_old = active;
 	if (!active) {
 		MMA7660_SetActive(true);
-		AIR_udelay(13000); //turn on time from standby -> active
+		AIR_GENERIC_UDelay(13000); //turn on time from standby -> active
 	}
 
 	signed char temp;
@@ -52,7 +52,7 @@ void MMA7660_GetRawData(int8_t *data)
 	bool active_old = active;
 	if (!active) {
 		MMA7660_SetActive(true);
-		AIR_udelay(13000); //turn on time from standby -> active
+		AIR_GENERIC_UDelay(13000); //turn on time from standby -> active
 	}
 
 	unsigned char temp[3];
@@ -90,7 +90,7 @@ float MMA7660_GetSingleAxisAccel( uint8_t number )
 	bool active_old = active;
 	if (!active) {
 		MMA7660_SetActive(true);
-		AIR_udelay(13000); //turn on time from standby -> active
+		AIR_GENERIC_UDelay(13000); //turn on time from standby -> active
 	}
 
 	signed char temp;
